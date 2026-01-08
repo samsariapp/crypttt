@@ -1,0 +1,201 @@
+/* Landing Page Styles */
+
+.landing-container {
+  background: linear-gradient(135deg, #0a1628 0%, #1a2332 100%);
+  min-height: 100vh;
+  color: #fff;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, rgba(0, 100, 200, 0.3) 0%, rgba(0, 200, 100, 0.3) 100%);
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 150, 200, 0.3);
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #00aaff 0%, #00ff88 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-section h6 {
+  color: #b0b8c1;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.game-card {
+  background: linear-gradient(135deg, #2a3f5f 0%, #1a2332 100%);
+  border: 1px solid rgba(0, 150, 200, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 200, 255, 0.8);
+  box-shadow: 0 8px 24px rgba(0, 150, 200, 0.3);
+}
+
+.game-card .emoji {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.game-card .title {
+  color: #b0b8c1;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.game-card .players {
+  color: #00ff00;
+  font-size: 0.85rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.sports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.sport-card {
+  background: linear-gradient(135deg, #2a3f5f 0%, #1a2332 100%);
+  border: 1px solid rgba(0, 200, 100, 0.5);
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sport-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 255, 100, 0.8);
+  box-shadow: 0 8px 24px rgba(0, 200, 100, 0.3);
+}
+
+.sport-card .emoji {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.recent-bets-table {
+  background: linear-gradient(135deg, #2a3f5f 0%, #1a2332 100%);
+  border: 1px solid rgba(0, 150, 200, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.recent-bets-table thead {
+  background: rgba(0, 150, 200, 0.1);
+  border-bottom: 2px solid rgba(0, 150, 200, 0.5);
+}
+
+.recent-bets-table th {
+  color: #00aaff;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.recent-bets-table td {
+  color: #b0b8c1;
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(0, 150, 200, 0.2);
+}
+
+.recent-bets-table tr:hover {
+  background: rgba(0, 150, 200, 0.1);
+}
+
+.faq-accordion {
+  background: linear-gradient(135deg, #2a3f5f 0%, #1a2332 100%);
+  border: 1px solid rgba(0, 150, 200, 0.3);
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.faq-accordion:before {
+  display: none;
+}
+
+.faq-accordion.Mui-expanded {
+  border-color: rgba(0, 200, 255, 0.6);
+}
+
+.cta-section {
+  background: linear-gradient(135deg, rgba(0, 150, 200, 0.2) 0%, rgba(0, 200, 100, 0.2) 100%);
+  border: 2px solid rgba(0, 150, 200, 0.5);
+  border-radius: 10px;
+  padding: 60px 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cta-section h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.cta-section p {
+  color: #b0b8c1;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #00aaff 0%, #0088ff 100%);
+  color: #fff;
+  padding: 15px 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #0088ff 0%, #0066dd 100%);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .sports-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .cta-section {
+    padding: 40px 20px;
+  }
+}

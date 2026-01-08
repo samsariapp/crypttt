@@ -1,0 +1,252 @@
+🎰 CRYPTO CASINO - COMPLETE PROJECT MAP
+================================================================================
+
+📁 PROJECT ROOT
+│
+├─ 🚀 LAUNCH FILES
+│  ├─ START_CASINO.bat ..................... One-click launcher
+│  ├─ VIEW_SUMMARY.bat ..................... Display summary
+│  ├─ fix-landing.js ....................... Fix script
+│  └─ package.json ......................... Scripts: launch, fix
+│
+├─ 📚 DOCUMENTATION
+│  ├─ LAUNCH_GUIDE.md ...................... Complete guide
+│  ├─ IMPLEMENTATION_SUMMARY.md ............ What was built
+│  ├─ FILE_INDEX.md ........................ Complete file list
+│  ├─ QUICK_START.txt ...................... Visual quick start
+│  ├─ COMPLETE_REPORT.md ................... Full report
+│  ├─ PROJECT_MAP.txt ...................... This file
+│  └─ README.md ............................ Original README
+│
+└─ 📂 src/
+   │
+   ├─ 🎮 components/ (GAME COMPONENTS)
+   │  │
+   │  ├─ ✨ NEW GAMES
+   │  │  ├─ BlackjackGame.js ............... 🃏 Card game
+   │  │  ├─ SlotMachine.js ................. 🎰 Slots
+   │  │  ├─ DiceGame.js .................... 🎲 Dice
+   │  │  └─ CoinFlip.js .................... 🪙 Coin flip
+   │  │
+   │  ├─ 🔄 UPDATED COMPONENTS
+   │  │  ├─ Games.js ....................... All games grid
+   │  │  ├─ LandingPage.js ................. Enhanced landing
+   │  │  └─ GameButton.js .................. Dynamic routing
+   │  │
+   │  └─ 📦 EXISTING COMPONENTS
+   │     ├─ RouletteGame.js ................ 🎡 Roulette
+   │     ├─ Roulette.js .................... Wheel component
+   │     ├─ Header.js ...................... Navigation
+   │     ├─ Wallet.js ...................... Wallet page
+   │     ├─ BuyTokens.js ................... Buy tokens
+   │     ├─ Withdraw.js .................... Withdraw tokens
+   │     ├─ SelectAmount.js ................ Bet input
+   │     ├─ CustomButton.js ................ Button component
+   │     ├─ customTextField.js ............. Text input
+   │     └─ TotalBNB.js .................... BNB calculation
+   │
+   ├─ 🔗 App.js (UPDATED) ................... Main app + routing
+   │
+   ├─ 🎨 styles/
+   │  └─ LandingPage.css .................... Landing styles
+   │
+   ├─ 🖼️ images/
+   │  ├─ Roulette.png
+   │  ├─ Roulette.webp
+   │  └─ Gold-Star-PNG-Photos.png
+   │
+   ├─ 🔧 services/
+   │  └─ contractsService.js ................ Smart contracts
+   │
+   ├─ 📊 reducers/
+   │  ├─ accountReducer.js .................. Account state
+   │  ├─ balanceReducer.js .................. Balance state
+   │  ├─ priceReducer.js .................... Price state
+   │  └─ historialReducer.js ................ History state
+   │
+   ├─ 🎣 hooks/
+   │  └─ useField.js ........................ Custom hook
+   │
+   └─ ⚙️ backend/
+      ├─ contracts/
+      │  ├─ Casino.sol ...................... Main contract
+      │  └─ Token.sol ....................... ERC20 token
+      └─ scripts/
+         └─ deploy.js ....................... Deploy script
+
+================================================================================
+
+🎯 GAME FLOW
+================================================================================
+
+User Journey:
+┌─────────────────────────────────────────────────────────────────────────┐
+│                                                                         │
+│  1. Launch Casino                                                       │
+│     └─> START_CASINO.bat or npm run launch                            │
+│                                                                         │
+│  2. Browser Opens → Landing Page (/)                                    │
+│     ├─> Hero section with welcome                                      │
+│     ├─> 8 Trending game cards                                          │
+│     ├─> 8 More game cards                                              │
+│     ├─> Sports betting section                                         │
+│     ├─> Recent bets table                                              │
+│     └─> FAQ accordion                                                  │
+│                                                                         │
+│  3. Click "Connect Wallet" (Optional)                                   │
+│     └─> MetaMask integration                                           │
+│                                                                         │
+│  4. Navigate to Games                                                   │
+│     ├─> Click any game card on landing page                            │
+│     └─> Or use /games route                                            │
+│                                                                         │
+│  5. Select Game                                                         │
+│     ├─> 🎡 Roulette (/games/Roulette)                                 │
+│     ├─> 🃏 Blackjack (/games/Blackjack)                               │
+│     ├─> 🎰 Slots (/games/Slots)                                        │
+│     ├─> 🎲 Dice (/games/Dice)                                          │
+│     └─> 🪙 Coin Flip (/games/CoinFlip)                                │
+│                                                                         │
+│  6. Play Game                                                           │
+│     ├─> Enter bet amount                                               │
+│     ├─> Make game choice                                               │
+│     ├─> Click play button                                              │
+│     ├─> Watch animation                                                │
+│     └─> See result + balance update                                    │
+│                                                                         │
+│  7. Manage Wallet (Optional)                                            │
+│     ├─> Navigate to /Wallet                                            │
+│     ├─> Buy tokens (/Wallet/buyTokens)                                │
+│     └─> Withdraw tokens (/Wallet/withdrawTokens)                      │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+
+================================================================================
+
+🎮 GAME DETAILS
+================================================================================
+
+🃏 BLACKJACK
+├─ Location: /games/Blackjack
+├─ Component: BlackjackGame.js
+├─ Features:
+│  ├─ Hit and Stand buttons
+│  ├─ Dealer AI (draws to 17)
+│  ├─ Card display with suits
+│  ├─ Score tracking
+│  ├─ Blackjack detection
+│  ├─ Bust handling
+│  └─ 2x/2.5x payouts
+└─ UI: Blue theme with card animations
+
+🎰 SLOT MACHINE
+├─ Location: /games/Slots
+├─ Component: SlotMachine.js
+├─ Features:
+│  ├─ 3 spinning reels
+│  ├─ 8 symbols (💎,7️⃣,⭐,🔔,🍇,🍊,🍋,🍒)
+│  ├─ Multipliers: 2x to 100x
+│  ├─ Payout table display
+│  └─ Spin animation
+└─ UI: Gold/Orange theme with pulse effects
+
+🎲 DICE GAME
+├─ Location: /games/Dice
+├─ Component: DiceGame.js
+├─ Features:
+│  ├─ Roll Over/Under selection
+│  ├─ Adjustable target (1-100)
+│  ├─ Dynamic multiplier
+│  ├─ Win chance calculator
+│  └─ Rolling animation
+└─ UI: Blue theme with rotating dice
+
+🪙 COIN FLIP
+├─ Location: /games/CoinFlip
+├─ Component: CoinFlip.js
+├─ Features:
+│  ├─ Heads/Tails choice buttons
+│  ├─ Coin flip animation
+│  ├─ 50% chance, 2x multiplier
+│  ├─ Last 10 flips history
+│  └─ Emoji coin display
+└─ UI: Gold theme with flip animation
+
+🎡 ROULETTE (Existing)
+├─ Location: /games/Roulette
+├─ Component: RouletteGame.js
+└─ Features: Original roulette mechanics
+
+================================================================================
+
+🔗 ROUTING MAP
+================================================================================
+
+/                                Landing Page
+├─ 16 clickable game cards
+├─ Sports section
+├─ Recent bets
+└─ FAQ section
+
+/games                           Games Selection
+├─ Shows all 5 playable games
+└─ Grid layout
+
+/games/Roulette                  🎡 Roulette Game
+/games/Blackjack                 🃏 Blackjack Game ✨ NEW
+/games/Slots                     🎰 Slot Machine ✨ NEW
+/games/Dice                      🎲 Dice Game ✨ NEW
+/games/CoinFlip                  🪙 Coin Flip ✨ NEW
+
+/Wallet                          Wallet Management
+├─ /Wallet/buyTokens            Buy Tokens
+└─ /Wallet/withdrawTokens       Withdraw Tokens
+
+================================================================================
+
+📦 DEPENDENCIES
+================================================================================
+
+All Games Use:
+├─ React (UI framework)
+├─ Material-UI (Components)
+├─ Redux (State management)
+├─ react-toastify (Notifications)
+├─ react-router-dom (Navigation)
+├─ ethers.js (Blockchain)
+└─ Custom hooks (useField)
+
+================================================================================
+
+✅ LAUNCH CHECKLIST
+================================================================================
+
+Before Launch:
+☑ Node.js installed
+☑ Dependencies installed (npm install)
+☑ MetaMask extension installed (optional)
+☑ Port 3000 available
+
+To Launch:
+☑ Run: START_CASINO.bat (Windows)
+   OR
+☑ Run: npm run launch
+   OR
+☑ Run: node fix-landing.js && npm start
+
+After Launch:
+☑ Browser opens to localhost:3000
+☑ Landing page loads
+☑ All game cards visible
+☑ Navigation works
+☑ Games load correctly
+☑ Animations smooth
+☑ No console errors
+
+================================================================================
+
+🎊 STATUS: READY TO LAUNCH! 🎊
+
+Everything is in place. Just run START_CASINO.bat!
+
+================================================================================

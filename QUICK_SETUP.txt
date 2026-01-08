@@ -1,0 +1,84 @@
+🎰 DEPOSIT & WITHDRAW SYSTEM - COMPLETE SETUP ✅
+═══════════════════════════════════════════════════════════════════
+
+✅ WHAT'S READY:
+
+1. ✅ Your private key saved (.secret file)
+2. ✅ Smart contract with deposit/withdraw functions
+3. ✅ Player UI for buying/withdrawing tokens
+4. ✅ Owner withdrawal scripts
+5. ✅ Complete documentation
+
+═══════════════════════════════════════════════════════════════════
+🚀 TO START ACCEPTING DEPOSITS - DO THIS NOW:
+═══════════════════════════════════════════════════════════════════
+
+STEP 1: Get Free Testnet Tokens (2 minutes)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Go to: https://faucet.polygon.technology/
+Enter your address: 0x40da4ca594
+Click Submit
+Wait 30 seconds
+
+STEP 2: Deploy Casino (1 minute)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Double-click: DEPLOY.bat
+Choose option 1 (Polygon Mumbai)
+Wait for deployment
+SAVE the contract addresses shown!
+
+STEP 3: Start Casino (10 seconds)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Run: npm start
+Browser opens automatically
+
+✅ DONE! Casino is live and accepting deposits!
+
+═══════════════════════════════════════════════════════════════════
+💰 HOW IT WORKS:
+═══════════════════════════════════════════════════════════════════
+
+PLAYERS:
+1. Connect MetaMask
+2. Click "Wallet" → "Buy Tokens"
+3. Enter amount (e.g., 100 tokens = 0.1 ETH)
+4. Confirm transaction
+5. Play games with tokens
+6. Withdraw remaining tokens anytime
+
+YOU (OWNER):
+1. All player deposits accumulate in contract
+2. When ready to cash out:
+   - Double-click: WITHDRAW_PROFITS.bat
+   - Or run: npx hardhat run owner-withdraw.js --network polygon
+3. All ETH transfers to your wallet
+4. Transfer to Binance if desired
+
+═══════════════════════════════════════════════════════════════════
+📁 KEY FILES:
+═══════════════════════════════════════════════════════════════════
+
+DEPLOY.bat                  → Deploy casino to blockchain
+WITHDRAW_PROFITS.bat        → Withdraw your earnings
+DEPOSIT_WITHDRAW_GUIDE.txt  → Complete usage guide
+DEPLOYMENT_GUIDE.md         → Full technical documentation
+owner-withdraw.js           → Withdrawal script
+
+═══════════════════════════════════════════════════════════════════
+⚠️ REMEMBER:
+═══════════════════════════════════════════════════════════════════
+
+- This is a TEST wallet (key was shared)
+- For REAL money: Create NEW wallet
+- Never share private keys
+- Test everything on testnet first
+
+═══════════════════════════════════════════════════════════════════
+🎯 NEXT ACTION:
+═══════════════════════════════════════════════════════════════════
+
+1. Get testnet tokens from faucet
+2. Run DEPLOY.bat
+3. You're ready to accept deposits! 💰
+
+For detailed instructions, read: DEPOSIT_WITHDRAW_GUIDE.txt
